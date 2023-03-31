@@ -13,5 +13,6 @@ public class MappingProfile : Profile
 
         //INFO: Resource=>Destination.
         CreateMap<PlatformForCreationDto, Platform>().ReverseMap();//INFO: ReverseMap enables two way mapping.
+        CreateMap<Platform, PlatformDto>();
     }
 }
